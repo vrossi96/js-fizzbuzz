@@ -32,4 +32,8 @@ for (let i = 1; i <= 100; i++) {
   if (i % 3 == 0){
     console.log(`Fizz!`, i);
   }
+  // Se il numero nel ciclo è divisibile per 5 e da resto 0 allora Buzz!
+  else if (i % 5 == 0){
+    console.log(`Buzz!`, i);
+  }
 }
