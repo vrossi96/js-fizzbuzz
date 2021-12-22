@@ -25,6 +25,11 @@ Passi
 
 */
 
+// Calcolo ciclo da 1 a 100
 for (let i = 1; i <= 100; i++) {
-  console.log(i);
+  console.log('Numero: ', i);
+  // Se il numero nel ciclo è divisibile per 3 e da resto 0 allora Fizz!
+  if (i % 3 == 0){
+    console.log(`Fizz!`, i);
+  }
 }
