@@ -24,3 +24,7 @@ Passi
   1c- SE il numero è multiplo di 3 e 5 allora FizzBuzz
 
 */
+
+for (let i = 1; i <= 100; i++) {
+  console.log(i);
+}
