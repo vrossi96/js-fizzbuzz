@@ -9,6 +9,15 @@ li {
   margin: 5px 0;
 }
 
+ul {
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 5px;
+
+  column-count: 4;
+  column-gap: 15px;
+}
+
 .fizz {
   color: green;
 }
