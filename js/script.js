@@ -25,19 +25,30 @@ Passi
 
 */
 
+const container = document.getElementById('numbers');
+let number = '';
+
 // Calcolo ciclo da 1 a 100
-for (let i = 1; i <= 100; i++) {
-  console.log('Numero: ', i);
+for (let i = 1; i <= 50; i++) {
+  if (!(i % 3 == 0) && !(i % 5 == 0)) {
+    console.log('Numero: ', i);
+    number += `<li>${i}</li>`;
+  }
   // Se il numero nel ciclo è divisibile sia per 3 e 5 e da resto 0 ad entrambi allora FizzBuzz!
-  if ((i % 3 == 0) && (i % 5 == 0)){
+  else if ((i % 3 == 0) && (i % 5 == 0)){
     console.log(`FizzBuzz!`, i);
+    number += `<li>FizzBuzz</li>`;
   }
   // Se il numero nel ciclo è divisibile per 3 e da resto 0 allora Fizz!
   else if (i % 3 == 0){
     console.log(`Fizz!`, i);
+    number += `<li>Fizz</li>`;
   }
   // Se il numero nel ciclo è divisibile per 5 e da resto 0 allora Buzz!
   else if (i % 5 == 0){
     console.log(`Buzz!`, i);
+    number += `<li>Buzz</li>`;
   }
 }
+
+container.innerHTML = number;
